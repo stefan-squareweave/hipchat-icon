@@ -1,0 +1,11 @@
+[Unit]
+Description=Hipchat notification icon
+
+[Service]
+Type=simple
+WorkingDirectory=/home/work/bin/mine/hipchat-icon/icon-server/
+ExecStart=/usr/bin/python /home/work/bin/mine/hipchat-icon/icon-server/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
